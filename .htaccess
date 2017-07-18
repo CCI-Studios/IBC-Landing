@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.ibcsarnia.com/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^ibcsarnia\.com [NC]
+RewriteRule ^(.*)$ https://www.ibcsarnia.com/$1 [R,L]
